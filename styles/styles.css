@@ -1,0 +1,113 @@
+body{
+    font:12pt sans-serif;
+    color: #525252;
+}
+legend{
+    min-width: 50%; max-width: 320px; min-height: 40px;
+    background: url('logo.png') no-repeat;
+    background-size: contain;
+}
+.forma{
+    width:50%;
+    min-width: 270px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px double rgba(56, 139, 237, 0.28);
+    border-radius: 5px;
+}
+p{
+    width: 100%;
+}
+label{
+    float: left;
+    text-align: left;
+    width:20%;
+}
+#button{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background: linear-gradient(0deg, rgba(36, 89, 175, 0.83) 50%, #7dcdff);
+    font-size:8pt;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+}
+#button:disabled{
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    background: linear-gradient(0deg, #e6e6e6 1%, #ffffff);
+    cursor: default;
+}
+#button:enabled:hover{
+    background:  linear-gradient(0deg, #7dcdff 30%, rgba(36, 89, 175, 0.83))
+}
+#result{
+    display: none;
+    width: 100%;
+    margin-top: 25px;
+    cursor: default;
+}
+#result p{
+    padding: 5px 0
+}
+#result p:hover{
+    background: rgba(255, 167, 0, 0.28);
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #906400;
+    
+}
+#result span{
+     float: right 
+}
+/* стиль для валидатора*/
+label.error{
+    display: block;
+    width: auto;
+    margin-top: 2px;
+    font-size:8pt;
+    color: rgba(255, 20, 20, 0.72);
+    margin-left: 20%;
+}
+/*реворк стилей плагина select2 */
+.select2-container{
+    min-width:80%;
+    font-size: 7pt;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+}
+.select2-drop{
+    text-transform: capitalize;
+    font-size: 10pt;
+    outline: none;
+}
+.select2-search input{
+    font-size: 7pt;
+    text-transform: uppercase;
+}
+.select2-results .select2-no-results{
+    text-transform: lowercase
+}
+input[type=number]{
+    width:80%;
+    outline: none;
+    border: 1px solid #aaa;
+    line-height: 26px;
+    color: #444;
+    border-radius: 4px;
+    font-size: 10pt;
+    box-sizing: border-box;
+    padding-left: 5%
+}
+input[type=number]:focus{
+    border: 1px solid #5897fb;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3)
+}
